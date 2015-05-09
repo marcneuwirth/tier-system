@@ -2,5 +2,5 @@ node_modules
 npm-debug.log
 *.swp
 .idea
-*.js
+public/build
 
