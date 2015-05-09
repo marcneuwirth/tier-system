@@ -181,7 +181,8 @@ var App = React.createClass({
         <div className="row">
           <div className="col-xs-12">
             <div className="jumbotron">
-              <h1>The Tier System <small>by Whitney Sorenson</small></h1>
+              <h1>The Tier System</h1>
+              <h3><small>according to <strong>Whitney Sorenson</strong></small></h3>
             </div>
           </div>
         </div>
