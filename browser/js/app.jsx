@@ -33,15 +33,21 @@ var App = React.createClass({
   renderLinks: function() {
     links = [];
     for (rating in ratings){
-      var classes = classNames('list-group-item', {active: this.state.active === rating});
+      var classes = classNames({active: this.state.active === rating});
 
       links.push(
-        <a key={rating} className={classes} href={'#' + rating} onClick={this.handleLinkClick.bind(null, rating)}>
-          {rating}
-        </a>
+        <li key={rating} role="presentation" className={classes}>
+          <a href={'#' + rating} onClick={this.handleLinkClick.bind(null, rating)}>
+            {rating}
+          </a>
+        </li>
       );
     }
-    return links;
+    return (
+      <ul className="nav nav-pills nav-stacked">
+        {links}
+      </ul>
+    );
   },
 
   renderAreas: function() {
@@ -175,23 +181,19 @@ var App = React.createClass({
         <div className="row">
           <div className="col-xs-12">
             <div className="jumbotron">
-              <h1>Tier System <small>by Whitney Sorenson</small></h1>
+              <h1>The Tier System <small>by Whitney Sorenson</small></h1>
             </div>
           </div>
         </div>
 
         <div className="row">
           <div className="col-xs-12 col-sm-3">
-            <div className="list-group">
-              {this.renderLinks()}
-            </div>
+            {this.renderLinks()}
           </div>
 
 
           <div className="col-xs-12 col-sm-9">
-            <ul className='list-unstyled'>
-              {this.renderAreas()}
-            </ul>
+            {this.renderAreas()}
           </div>
 
         </div>
