@@ -1,4 +1,6 @@
+public/build
 node_modules
 npm-debug.log
 *.swp
 .idea
+

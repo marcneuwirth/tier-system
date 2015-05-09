@@ -8,10 +8,6 @@ var tiers = data.tiers;
 
 var ALL = 'All'
 
-var toClassName = function toClassName(name){
-  return name.replace(/ /g, '-').toLowerCase();
-}
-
 var App = React.createClass({
 
   getInitialState: function() {
@@ -193,7 +189,7 @@ var App = React.createClass({
 
 
           <div className="col-xs-12 col-sm-9">
-            <ul>
+            <ul className='list-unstyled'>
               {this.renderAreas()}
             </ul>
           </div>
