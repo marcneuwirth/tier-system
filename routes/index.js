@@ -6,10 +6,9 @@ var router = express.Router();
 var tiers = config.get('tiers');
 var ratings = config.get('ratings');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-    title: 'Tier System',
+    title: 'The Tier System according to Whitney Sorenson',
     data: {
       tiers: tiers,
       ratings: ratings
