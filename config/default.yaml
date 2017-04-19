@@ -7,19 +7,19 @@ ratings:
     classType: success
   Tier 2:
     description: "Memorable experience, worthy of return visits."
-    classType: default
+    classType: primary
   Tier 3:
     description: "Acceptable value but in no hurry to return."
-    classType: warning
+    classType: black
   Tier 4:
     description: "Substandard value or execution."
     classType: warning
   Solid:
     description: "Pleasing food or experience. Worth a trip."
-    classType: default
+    classType: info
   Mediocre:
     description: "Average, unworthy of special attention."
-    classType: warning
+    classType: default
   Hellscape:
     description: "Avoid at all costs."
     classType: danger
