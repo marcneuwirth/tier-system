@@ -53,8 +53,8 @@ var App = React.createClass({
   renderAreas: function() {
     var areaItems = [];
     for (var area in tiers){
-      var neighborhood = tiers[area];
-      neighborhoodList = this.renderNeighborhoods(neighborhood);
+      var neighborhoods = tiers[area];
+      neighborhoodList = this.renderNeighborhoods(area, neighborhoods);
 
       if (neighborhoodList !== undefined){
         areaItems.push(
@@ -81,11 +81,11 @@ var App = React.createClass({
     }
   },
 
-  renderNeighborhoods: function(neighborhoods) {
+  renderNeighborhoods: function(area, neighborhoods) {
     var neighborhoodItems = [];
     for (var neighborhood in neighborhoods){
       var restaurants = neighborhoods[neighborhood];
-      restaurantsList = this.renderRestaurants(restaurants, neighborhood);
+      restaurantsList = this.renderRestaurants(restaurants, area);
 
       if (restaurantsList !== undefined){
         neighborhoodItems.push(
@@ -106,7 +106,7 @@ var App = React.createClass({
     }
   },
 
-  renderRestaurants: function(restaurants, neighborhood) {
+  renderRestaurants: function(restaurants, area) {
     var restaurantsList = [];
     for (var restaurant in restaurants){
       var rating = restaurants[restaurant];
@@ -119,7 +119,7 @@ var App = React.createClass({
           <p key={restaurant}>
             <span className={"label label-" + classType}>{rating}</span>
             {' '}
-            <a href={"https://www.google.com/#q=" + encodeURIComponent(restaurant + " " + neighborhood)} target="_blank">{restaurant}</a>
+            <a href={"https://www.google.com/#q=" + encodeURIComponent(restaurant + " " + area)} target="_blank">{restaurant}</a>
           </p>
         );
       }
