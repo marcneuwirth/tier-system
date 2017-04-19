@@ -85,7 +85,7 @@ var App = React.createClass({
     var neighborhoodItems = [];
     for (var neighborhood in neighborhoods){
       var restaurants = neighborhoods[neighborhood];
-      restaurantsList = this.renderRestaurants(restaurants);
+      restaurantsList = this.renderRestaurants(restaurants, neighborhood);
 
       if (restaurantsList !== undefined){
         neighborhoodItems.push(
@@ -106,34 +106,30 @@ var App = React.createClass({
     }
   },
 
-  renderRestaurants: function(restaurants) {
+  renderRestaurants: function(restaurants, neighborhood) {
     var restaurantsList = [];
     for (var restaurant in restaurants){
       var rating = restaurants[restaurant];
 
-      if (this.state.active === ALL || this.state.active === rating){
+      if (this.state.active === ALL || this.state.active === rating) {
 
         var classType = ratings[rating].classType
 
         restaurantsList.push(
-          <dt key={restaurant + "dt"}>
-            {restaurant}
-          </dt>
-        );
-
-        restaurantsList.push(
-          <dd key={restaurant + "dd"} className={classType}>
-            {rating}
-          </dd>
+          <p key={restaurant}>
+            <a href={"https://www.google.com/#q=" + encodeURIComponent(restaurant + " " + neighborhood)} target="_blank">{restaurant}</a>
+            {' '}
+            <span className={"label label-" + classType}>{rating}</span>
+          </p>
         );
       }
     }
 
     if (restaurantsList.length > 0){
       return (
-        <dl className="dl-horizontal">
+        <div>
           {restaurantsList}
-        </dl>
+        </div>
       );
     }
   },
