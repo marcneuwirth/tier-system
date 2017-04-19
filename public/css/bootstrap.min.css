@@ -17,5 +17,16 @@
 }
 
 p {
-  padding: 15px;
+  margin: 0;
+  padding: 5px 15px;
+}
+
+.label {
+  width: 72px;
+  display: inline-block;
+  padding: 5px;
+}
+
+.label-black {
+  background: #222222;
 }

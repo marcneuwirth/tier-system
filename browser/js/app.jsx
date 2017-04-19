@@ -117,9 +117,9 @@ var App = React.createClass({
 
         restaurantsList.push(
           <p key={restaurant}>
-            <a href={"https://www.google.com/#q=" + encodeURIComponent(restaurant + " " + neighborhood)} target="_blank">{restaurant}</a>
-            {' '}
             <span className={"label label-" + classType}>{rating}</span>
+            {' '}
+            <a href={"https://www.google.com/#q=" + encodeURIComponent(restaurant + " " + neighborhood)} target="_blank">{restaurant}</a>
           </p>
         );
       }
