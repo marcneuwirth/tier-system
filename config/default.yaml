@@ -60,7 +60,6 @@ tiers:
       Baraka Cafe: "Hellscape"
       Temple bar: "Hellscape"
 
-
     Union Sq:
       Backbar: "Tier 3"
       Bronwyn: "Tier 3"
@@ -156,6 +155,7 @@ tiers:
       Second St.: "Hellscape"
       Friendly Toast: "Hellscape"
       Cambridge Brewing Company: "Hellscape"
+      Taco Bell: "Tier 1"
 
   Boston:
     Downtown:
