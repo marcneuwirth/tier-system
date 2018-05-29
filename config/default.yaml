@@ -3,7 +3,7 @@ ratings:
     description: ""
     classType: default
   Tier 1:
-    description: "Extraordinary Food and service. A treat."
+    description: "Great food and service. A treat."
     classType: success
   Tier 2:
     description: "Memorable experience, worthy of return visits."
@@ -15,8 +15,11 @@ ratings:
     description: "Substandard value or execution."
     classType: warning
   Solid:
-    description: "Pleasing food or experience. Worth a trip."
+    description: "Pleasing food or experience."
     classType: info
+  Decent:
+    description: "Better than average, but just barely."
+    classType: black
   Mediocre:
     description: "Average, unworthy of special attention."
     classType: default
@@ -29,9 +32,10 @@ tiers:
     Davis Sq:
       Posto: "Tier 3"
       The Table at Season To Taste: "Tier 3"
-      3 Little figs: "Solid"
+      3 Little Figs: "Solid"
       Dave’s Fresh Pasta: "Solid"
-      Painted Burro: "Solid"
+      Painted Burro's Nachos: "Solid"
+      Painted Burro: "Mediocre"
       Qingdao Garden: "Solid"
       Cafe Barada: "Mediocre"
       Diesel: "Mediocre"
@@ -39,33 +43,35 @@ tiers:
       Hana Sushi: "Mediocre"
       Meju: "Mediocre"
       Redbones: "Mediocre"
-      Saloon: "Mediocre"
+      Saloon: "Hellscape"
       Sugidama: "Mediocre"
       Blue Shirt Cafe: "Hellscape"
       Foundry on Elm: "Hellscape"
       Orleans: "Hellscape"
       Out of the Blue: "Hellscape"
       Urban Hearth: "Hellscape"
+      Spoke Wine Bar: "Tier 1"
 
     Porter Sq:
       Guilia: "Tier 1"
       Forage: "Tier 3"
       Shepard: "Tier 3"
       Gran Gusto: "Tier 4"
-      Cambridge common: "Mediocre"
-      Trattoria pulcinella: "Mediocre"
+      Cambridge Common: "Mediocre"
+      Trattoria Pulcinella: "Mediocre"
       Christopher's: "Hellscape"
       Tavern in the Square: "Hellscape"
       Abbey: "Hellscape"
       Baraka Cafe: "Hellscape"
-      Temple bar: "Hellscape"
-
+      Temple Bar: "Hellscape"
 
     Union Sq:
       Backbar: "Tier 3"
       Bronwyn: "Tier 3"
-      Journeyman: "Tier 4"
+      Tasting Counter: "Tier 2"
+      Juliet: "Tier 3"
       Casa B: "Tier 4"
+      Field & Vine: "Tier 3"
 
     Other:
       Sarma: "Tier 1"
@@ -74,15 +80,13 @@ tiers:
       Kirkland Tap and Trotter: "Tier 3"
       Dali: "Tier 3"
       Kebab Factory: "Mediocre"
-      Highland Kitchen: "Mediocre"
-      TW Food: "Hellscape"
+      Highland Kitchen: "Decent"
 
   Cambridge:
     Inman Sq:
-      Puritan: "Tier 2"
+      Puritan & Co: "Tier 2"
       BisQ: "Tier 3"
       Bergamot: "Tier 3"
-      East Coast Grill: "Tier 3"
       Ole: "Tier 4"
       Loyal Nine: "Tier 4"
       Punjhabi Dhaba: "Solid"
@@ -94,6 +98,7 @@ tiers:
       Clover: "Hellscape"
       Ginger Exchange: "Hellscape"
       Midwest Grill: "Hellscape"
+      Muqueca: "Hellscape"
 
     Harvard Sq:
       Alden and Harlow: "Tier 1"
@@ -101,22 +106,24 @@ tiers:
       Russell House Tavern: "Tier 3"
       Harvest: "Tier 4"
       Henrietta's Table: "Tier 4"
-      Tasty Burger: "Solid"
-      The Maharaja: "Solid"
-      Grafton Street Pub: "Hellscape"
+      Tasty Burger: "Decent"
+      The Maharaja: "Decent"
+      Grafton Street: "Hellscape"
       Border Cafe: "Hellscape"
 
     Central Sq:
-      Cafe Sushi: "Tier 1"
+      Cafe Sushi: "Tier 2"
       Craigie on Main: "Tier 2"
       Salts: "Tier 3"
       Little Donkey: "Tier 3"
       Viale: "Tier 3"
       Garden at the Cellar: "Tier 3"
       Central Kitchen: "Tier 4"
+      Thelonious Monkfish: "Mediocre"
       Waypoint: "Tier 4"
-      Cellar: "Solid"
-      Flour: "Solid"
+      The Cellar: "Decent"
+      Pammy's: "Tier 3"
+      Flour Bakery: "Solid"
       Green Street: "Mediocre"
       Miracle of Science: "Mediocre"
       Cafe Rangzen: "Hellscape"
@@ -126,25 +133,25 @@ tiers:
 
     Kendall Sq:
       Oleana: "Tier 1"
-      Belly: "Tier 3"
+      Cafe ArtScience: "Tier 3"
       Bondir: "Tier 3"
-      Blue room: "Tier 4"
-      Fuji: "Tier 3"
-      Area Four Cambridge: "Tier 3"
+      Fuji: "Decent"
+      Area Four Cambridge: "Mediocre"
       Commonwealth: "Tier 4"
       Catalyst: "Tier 4"
       Helmand: "Tier 4"
       Dante: "Tier 4"
       Mulan: "Solid"
-      Koreana: "Solid"
-      Desfina: "Solid"
+      Koreana: "Mediocre"
+      Desfina: "Decent"
       Emmas: "Mediocre"
-      Firebrand Saints: "Mediocre"
+      Bon Me: "Decent"
+      State Park: "Decent"
       Similans: "Mediocre"
       Lord Hobo: "Mediocre"
       Area Four: "Mediocre"
       Acituna: "Mediocre"
-      Tatte: "Mediocre"
+      Tatte Bakery: "Mediocre"
       Evoo: "Hellscape"
       Za: "Hellscape"
       Abigail's: "Hellscape"
@@ -153,33 +160,55 @@ tiers:
       Squeaky Beaker: "Hellscape"
       ArtBar: "Hellscape"
       Bambara: "Hellscape"
-      Second St.: "Hellscape"
+      Second St. Cafe: "Hellscape"
       Friendly Toast: "Hellscape"
       Cambridge Brewing Company: "Hellscape"
 
   Boston:
     Downtown:
       O Ya: "Tier 1"
+      Ostra: "Tier 2"
+      Boston Chops: "Tier 3"
+      Yvonne's: "Tier 3"
+      Grill 23 & Bar: "Tier 3"
+      Scampo: "Tier 4"
+      Select Oyster Bar: "Tier 4"
+      Erbaluce: "Tier 3"
+      Top of the Hub: "Hellscape"
+      Townsman: "Tier 4"
 
     Back Bay:
+      Deuxave: "Tier 2"
+      Asta: "Tier 3"
       L’espalier: "Tier 3"
       Atlantic Fish Company: "Tier 3"
+      Eastern Standard: "Tier 3"
+      Fogo de Chao Brazilian Steakhouse: "Tier 4"
+      UNI: "Tier 3"
+      Sorellina: "Tier 3"
+
 
     Seaport:
-      Row 34: "Tier 1"
+      Row 34: "Tier 2"
       Menton: "Tier 2"
+      Ocean Prime: "Tier 4"
 
     Kenmore Sq:
       Island Creek Oyster Bar: "Tier 2"
 
+    North End:
+      Neptune Oyster: "Tier 2"
+
     South End:
-      Toro: "Tier 1"
-      Butcher Shop: "Tier 2"
-      Oishii Boston: "Tier 2"
+      Toro: "Tier 2"
+      Bar Mezzana: "Tier 2"
+      Butcher Shop: "Tier 3"
+      Oishii Boston: "Tier 3"
       Mistral: "Tier 2"
+      SRV: "Tier 3"
 
     Park Street:
-      No. 9 park: "Tier 3"
+      No. 9 Park: "Tier 4"
       Silvertone: "Hellscape"
 
     Fenway:
